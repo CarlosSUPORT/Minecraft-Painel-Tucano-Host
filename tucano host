@@ -1,0 +1,68 @@
+index.html=<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Painel Host</title>
+</head>
+<body>
+    <header>
+        <h1>Painel de Controle</h1>
+    </header>
+    <main>
+        <section id="info">
+            <h2>Informações do Servidor</h2>
+            <p>Status: Online</p>
+            <p>IP: 123.456.789.0</p>
+        </section>
+        <section id="actions">
+            <h2>Ações</h2>
+            <button id="start">Iniciar Servidor</button>
+            <button id="stop">Parar Servidor</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+style.css=body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+script.js=document.getElementById('start').addEventListener('click', function() {
+    alert('Servidor iniciado!');
+});
+
+document.getElementById('stop').addEventListener('click', function() {
+    alert('Servidor parado!');
+});
